@@ -1,0 +1,49 @@
+name:                mdh
+version:             0.1.0.0
+github:              "cafkafk/mathdh"
+license:             AGPL3
+author:              "cafkafk"
+maintainer:          "cafkafk"
+copyright:           "2021 Christina (cafkafk) - CESC"
+
+extra-source-files:
+- README.org
+- ChangeLog.org
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Education
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.org file.
+description:         Please see the README on GitHub at <https://github.com/cafkafk/mathdh#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- random
+
+library:
+  source-dirs: src
+
+executables:
+  mathdh-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - mathdh
+
+tests:
+  mathdh-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - mathdh
