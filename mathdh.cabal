@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 
-name:           mathcd
+name:           mathdh
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/cafkafk/mathdh#readme>
 homepage:       https://github.com/cafkafk/mathdh#readme
@@ -12,7 +12,7 @@ bug-reports:    https://github.com/cafkafk/mathdh/issues
 author:         cafkafk
 maintainer:     cafkafk
 copyright:      2021 Christina (cafkafk) - CESC
-license:        AGPL
+license:        AGPL3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -35,7 +35,7 @@ library
     , random
   default-language: Haskell2010
 
-executable mathdh-exe
+executable mdh
   main-is: Main.hs
   other-modules:
       Paths_mathdh
