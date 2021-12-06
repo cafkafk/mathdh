@@ -1,6 +1,67 @@
-
 * MDH - Mathdh - Mathematics Drills with Haskell
+You know... It kind of sucks how we all forget everything we learned in school.
+
+One of the worst things is certainly math. I mean, we spend all this time learning
+it, just to have it slowly dissipate in the background. But with just a slight
+investment of time, we can keep our skills tip top. So...
+
+That's why I made this. It also has helped me a lot with my arithmetic in general,
+I used to be almost unable to calculate anything in my head, but with the
+help of daily drillsin =mhd=, now I can almost calculate my groceries while shopping...
+Or well not really, but I can do multiplication pretty darn fast!
+
+I just was annoyed that I had this program siloed in the depths for my random
+code projects folder where it just collected dust. So here! Perhaps I'll even
+give it some love when time permits.
 
 * Features
 #+HTML: <a href="https://asciinema.org/a/XfWcJpcGHcICWSUbj1fdKFo70" target="_blank"><img src="https://asciinema.org/a/XfWcJpcGHcICWSUbj1fdKFo70.svg" /></a>
+- Addition, Subtractions, Multiplication, Division problems.
+- Practice multiplication tables (or other types of table operations).
+- Drill random combinations in a range you find comfortable.
+- Super simple and fast, making it a very eacy habit to put into those
+  gabs in your workday. E.g. could be run every time you log in quizzing you
+  with just 5 random questions.
+- Super lightweight.
 * Manual
+The program has been developed on NixOS for now the only /supported/ way to run it is on NixOS.
+** Downloading
+*** git HTTPS
+To get the latest version with git over HTTPS:
+#+begin_src sh
+git clone https://github.com/cafkafk/mathdh.git
+#+end_src
+*** git SSH
+To get the latest version with git over SSH:
+#+begin_src sh
+git clone git@github.com:cafkafk/mathdh.git
+#+end_src
+
+** Building
+*** Linux - NixOS
+**** Compiling
+Navigate to your local copy of the repository. When you're in the root directory,
+simply run:
+#+begin_src sh
+./build.sh
+#+end_src
+
+And the binary will be built for you in the local directory and installedi in your nix user profile.
+** Usage
+To use =mdh=, just run:
+#+begin_src sh
+mdh
+#+end_src
+
+Which will produce no output beyond telling you that the program is =done=.
+
+However, using a command like:
+#+begin_src sh
+mdh 11 1 10 "*" +
+#+end_src
+
+Will start a drill session where you go through the operations * and +, starting
+with a refresher of all the combinations from 1 to 10, before giving you 11
+random questions per number in the range you gave, with another number in the
+same range.
+
