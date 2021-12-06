@@ -1,1 +1,6 @@
-* mathdh
+
+* MDH - Mathdh - Mathematics Drills with Haskell
+
+* Features
+#+HTML: <a href="https://asciinema.org/a/XfWcJpcGHcICWSUbj1fdKFo70" target="_blank"><img src="https://asciinema.org/a/XfWcJpcGHcICWSUbj1fdKFo70.svg" /></a>
+* Manual
