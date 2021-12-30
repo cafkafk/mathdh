@@ -48,6 +48,7 @@ import Data.List
 import System.IO
 import System.Random
 import System.Environment
+import System.Process
 
 import Text.Read
 import Text.Printf
@@ -80,6 +81,7 @@ game op a b = do
   input <- forceInput 
   let guess = (read input :: Int)
   let answer = sapp op a b
+  system "clear"
   putStrLn $ if (answer == guess) then "Correct" else "Wrong, it was " ++ show answer
 
 -- Deligate numbers to ops and runs game
